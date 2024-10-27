@@ -1,0 +1,13 @@
+{
+  "runtimeOptions": {
+    "tfm": "net8.0",
+    "additionalProbingPaths": [
+      "C:\\Users\\DUY\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\DUY\\.nuget\\packages",
+      "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages"
+    ],
+    "configProperties": {
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}
