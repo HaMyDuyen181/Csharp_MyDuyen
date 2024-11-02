@@ -7,6 +7,8 @@ namespace Quanlyview
         public Form1()
         {
             InitializeComponent();
+            btQuenMatKhau.Click += btQuenMatKhau_Click;
+
         }
 
         private void btDangNhap_Click(object sender, EventArgs e)
@@ -65,12 +67,35 @@ namespace Quanlyview
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true) { 
-                   tbMatKhau.UseSystemPasswordChar = false;
+            if (checkBox1.Checked == true)
+            {
+                tbMatKhau.UseSystemPasswordChar = false;
             }
             else
             {
-                tbMatKhau.UseSystemPasswordChar=true;
+                tbMatKhau.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void btQuenMatKhau_Click(object sender, EventArgs e)
+        {
+            // Hiển thị hộp thoại nhập địa chỉ email hoặc tên đăng nhập
+            string input = Microsoft.VisualBasic.Interaction.InputBox("Nhập tên tài khoản hoặc địa chỉ email:", "Quên mật khẩu", "");
+
+            if (string.IsNullOrEmpty(input))
+            {
+                MessageBox.Show("Vui lòng nhập tên tài khoản hoặc địa chỉ email.", "Thông báo");
+                return;
+            }
+
+            // Kiểm tra tên tài khoản
+            if (input == tentaikhoan)
+            {
+                MessageBox.Show($"Mật khẩu của bạn là: {matkhau}", "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Tên tài khoản không tồn tại.", "Thông báo");
             }
         }
     }

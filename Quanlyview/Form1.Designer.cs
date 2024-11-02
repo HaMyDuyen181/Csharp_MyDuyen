@@ -35,6 +35,7 @@
             btDangNhap = new Button();
             btThoat = new Button();
             checkBox1 = new CheckBox();
+            btQuenMatKhau = new Button();
             SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(14, 107);
+            label2.Location = new Point(15, 89);
             label2.Name = "label2";
             label2.Size = new Size(70, 20);
             label2.TabIndex = 1;
@@ -66,7 +67,7 @@
             // 
             // tbMatKhau
             // 
-            tbMatKhau.Location = new Point(101, 96);
+            tbMatKhau.Location = new Point(101, 86);
             tbMatKhau.Margin = new Padding(3, 4, 3, 4);
             tbMatKhau.Name = "tbMatKhau";
             tbMatKhau.Size = new Size(156, 27);
@@ -76,7 +77,7 @@
             // 
             // btDangNhap
             // 
-            btDangNhap.Location = new Point(14, 181);
+            btDangNhap.Location = new Point(15, 153);
             btDangNhap.Margin = new Padding(3, 4, 3, 4);
             btDangNhap.Name = "btDangNhap";
             btDangNhap.Size = new Size(113, 44);
@@ -87,7 +88,7 @@
             // 
             // btThoat
             // 
-            btThoat.Location = new Point(144, 181);
+            btThoat.Location = new Point(144, 153);
             btThoat.Margin = new Padding(3, 4, 3, 4);
             btThoat.Name = "btThoat";
             btThoat.Size = new Size(113, 44);
@@ -99,7 +100,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(101, 135);
+            checkBox1.Location = new Point(101, 121);
             checkBox1.Margin = new Padding(3, 4, 3, 4);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(148, 24);
@@ -108,12 +109,23 @@
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // btQuenMatKhau
+            // 
+            btQuenMatKhau.Location = new Point(144, 216);
+            btQuenMatKhau.Name = "btQuenMatKhau";
+            btQuenMatKhau.Size = new Size(121, 28);
+            btQuenMatKhau.TabIndex = 7;
+            btQuenMatKhau.Text = "Quên mật khẩu";
+            btQuenMatKhau.UseVisualStyleBackColor = true;
+            btQuenMatKhau.Click += btQuenMatKhau_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Highlight;
             ClientSize = new Size(273, 256);
+            Controls.Add(btQuenMatKhau);
             Controls.Add(checkBox1);
             Controls.Add(btThoat);
             Controls.Add(btDangNhap);
@@ -139,5 +151,6 @@
         private Button btDangNhap;
         private Button btThoat;
         private CheckBox checkBox1;
+        private Button btQuenMatKhau;
     }
 }

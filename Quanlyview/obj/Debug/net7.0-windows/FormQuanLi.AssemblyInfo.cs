@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormQuanLi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0dc599923a8e2bf178a82b2f09e70385f8318ddf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a50a9504d3fd8e865bd4ca42f1d8eb6504befbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormQuanLi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormQuanLi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

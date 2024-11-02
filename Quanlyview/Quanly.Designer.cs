@@ -52,13 +52,15 @@
             btSelectImage = new Button();
             dateTimePicker1 = new DateTimePicker();
             label4 = new Label();
+            tbSearch = new TextBox();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvEmployee).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbEmployeeImage).BeginInit();
             SuspendLayout();
             // 
             // btThoat
             // 
-            btThoat.Location = new Point(578, 498);
+            btThoat.Location = new Point(797, 498);
             btThoat.Margin = new Padding(3, 4, 3, 4);
             btThoat.Name = "btThoat";
             btThoat.Size = new Size(74, 32);
@@ -69,7 +71,7 @@
             // 
             // btDangXuat
             // 
-            btDangXuat.Location = new Point(481, 498);
+            btDangXuat.Location = new Point(700, 498);
             btDangXuat.Margin = new Padding(3, 4, 3, 4);
             btDangXuat.Name = "btDangXuat";
             btDangXuat.Size = new Size(91, 32);
@@ -85,7 +87,7 @@
             dgvEmployee.Margin = new Padding(3, 4, 3, 4);
             dgvEmployee.Name = "dgvEmployee";
             dgvEmployee.RowHeadersWidth = 51;
-            dgvEmployee.Size = new Size(661, 172);
+            dgvEmployee.Size = new Size(857, 172);
             dgvEmployee.TabIndex = 2;
             dgvEmployee.RowEnter += dgvEmployee_RowEnter;
             // 
@@ -125,7 +127,7 @@
             tbId.Location = new Point(106, 55);
             tbId.Margin = new Padding(3, 4, 3, 4);
             tbId.Name = "tbId";
-            tbId.Size = new Size(166, 27);
+            tbId.Size = new Size(254, 27);
             tbId.TabIndex = 6;
             // 
             // tbName
@@ -133,7 +135,7 @@
             tbName.Location = new Point(106, 93);
             tbName.Margin = new Padding(3, 4, 3, 4);
             tbName.Name = "tbName";
-            tbName.Size = new Size(166, 27);
+            tbName.Size = new Size(254, 27);
             tbName.TabIndex = 8;
             // 
             // rbMale
@@ -186,7 +188,7 @@
             label5.BackColor = SystemColors.ButtonFace;
             label5.Font = new Font("Segoe UI Black", 15F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(216, 9);
+            label5.Location = new Point(349, 9);
             label5.Name = "label5";
             label5.Size = new Size(267, 35);
             label5.TabIndex = 13;
@@ -194,7 +196,7 @@
             // 
             // tbAddress
             // 
-            tbAddress.Location = new Point(406, 55);
+            tbAddress.Location = new Point(622, 55);
             tbAddress.Margin = new Padding(3, 4, 3, 4);
             tbAddress.Name = "tbAddress";
             tbAddress.Size = new Size(239, 27);
@@ -204,7 +206,7 @@
             // 
             label6.AutoSize = true;
             label6.BackColor = SystemColors.ControlDark;
-            label6.Location = new Point(302, 137);
+            label6.Location = new Point(518, 135);
             label6.Name = "label6";
             label6.Size = new Size(98, 20);
             label6.TabIndex = 17;
@@ -214,7 +216,7 @@
             // 
             label7.AutoSize = true;
             label7.BackColor = SystemColors.ControlDark;
-            label7.Location = new Point(337, 97);
+            label7.Location = new Point(553, 97);
             label7.Name = "label7";
             label7.Size = new Size(63, 20);
             label7.TabIndex = 18;
@@ -224,7 +226,7 @@
             // 
             label8.AutoSize = true;
             label8.BackColor = SystemColors.ControlDark;
-            label8.Location = new Point(338, 59);
+            label8.Location = new Point(554, 58);
             label8.Name = "label8";
             label8.Size = new Size(62, 20);
             label8.TabIndex = 19;
@@ -234,7 +236,7 @@
             // 
             cbMaphongban.FormattingEnabled = true;
             cbMaphongban.Items.AddRange(new object[] { "CCQ2211A", "CCQ2211B", "CCQ2211C", "CCQ2211D", "CCQ2211E", "CCQ2211F", "CCQ2211G", "CCQ2211H", "CCQ2211I", "CCQ2211K", "CCQ2211L", "CCQ2211M", "CCQ2211N" });
-            cbMaphongban.Location = new Point(406, 93);
+            cbMaphongban.Location = new Point(622, 93);
             cbMaphongban.Margin = new Padding(3, 4, 3, 4);
             cbMaphongban.Name = "cbMaphongban";
             cbMaphongban.Size = new Size(239, 28);
@@ -242,7 +244,7 @@
             // 
             // tbMaduan
             // 
-            tbMaduan.Location = new Point(406, 132);
+            tbMaduan.Location = new Point(622, 132);
             tbMaduan.Margin = new Padding(3, 4, 3, 4);
             tbMaduan.Name = "tbMaduan";
             tbMaduan.Size = new Size(239, 27);
@@ -251,7 +253,7 @@
             // pbEmployeeImage
             // 
             pbEmployeeImage.BackColor = SystemColors.ButtonFace;
-            pbEmployeeImage.Location = new Point(531, 171);
+            pbEmployeeImage.Location = new Point(747, 171);
             pbEmployeeImage.Margin = new Padding(3, 4, 3, 4);
             pbEmployeeImage.Name = "pbEmployeeImage";
             pbEmployeeImage.Size = new Size(114, 107);
@@ -261,7 +263,7 @@
             // 
             // btSelectImage
             // 
-            btSelectImage.Location = new Point(406, 171);
+            btSelectImage.Location = new Point(622, 171);
             btSelectImage.Margin = new Padding(3, 4, 3, 4);
             btSelectImage.Name = "btSelectImage";
             btSelectImage.Size = new Size(109, 33);
@@ -275,7 +277,7 @@
             dateTimePicker1.Location = new Point(106, 132);
             dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(166, 27);
+            dateTimePicker1.Size = new Size(254, 27);
             dateTimePicker1.TabIndex = 24;
             dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
@@ -289,13 +291,33 @@
             label4.TabIndex = 25;
             label4.Text = "Danh sách sinh viên";
             // 
+            // tbSearch
+            // 
+            tbSearch.Location = new Point(610, 287);
+            tbSearch.Name = "tbSearch";
+            tbSearch.Size = new Size(175, 27);
+            tbSearch.TabIndex = 26;
+            tbSearch.TextChanged += tbSearch_TextChanged;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = SystemColors.HighlightText;
+            label9.Location = new Point(791, 290);
+            label9.Name = "label9";
+            label9.Size = new Size(70, 20);
+            label9.TabIndex = 27;
+            label9.Text = "Tìm kiếm";
+            // 
             // Quanly
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Highlight;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(688, 531);
+            ClientSize = new Size(883, 531);
+            Controls.Add(label9);
+            Controls.Add(tbSearch);
             Controls.Add(label4);
             Controls.Add(dateTimePicker1);
             Controls.Add(btSelectImage);
@@ -331,6 +353,9 @@
             PerformLayout();
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+        }
         #endregion
 
         private Button btThoat;
@@ -356,5 +381,7 @@
         private Button btSelectImage;
         private DateTimePicker dateTimePicker1;
         private Label label4;
+        private TextBox tbSearch;
+        private Label label9;
     }
 }
